@@ -1,4 +1,7 @@
 
+let body = document.getElementById("body");
+let themeSwitch = document.getElementById("themeSwitch");
+
 let textInput = document.getElementById("tempInput");
 let radioBtn1 = document.getElementById("tempScale1");
 let radioBtn2 = document.getElementById("tempScale2");
@@ -37,4 +40,10 @@ function convertTemp() {
     }
 }
 
+function changeTheme() {
+    body.classList.toggle("dark")
+}
+
 convertBtn.addEventListener("click", convertTemp);
+
+themeSwitch.addEventListener("click", changeTheme);
