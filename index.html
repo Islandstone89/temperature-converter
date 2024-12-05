@@ -5,33 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codementor | Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <main>
+        <div class="container">
 
-        <h1 class="main-heading">Temperature Converter</h1>
+            <h1 class="main-heading">Temperature Converter</h1>
 
-        <div class="temp-converter">
+            <div class="temp-converter flow">
 
-            <label for="tempInput">Input</label>
-            <input type="text" id="tempInput" class="text-input">
+                <div class="input-wrapper text-wrapper">
+                    <label for="tempInput">Input</label>
+                    <input type="text" id="tempInput" class="text-input">
+                    <p class="error" id="errorMessage"></p>
+                </div><!-- end input-wrapper -->
 
-            <fieldset>
-                <legend>Choose temperature scale</legend>
+                <fieldset class="fieldset flow">
+                    <legend class="legend">Choose temperature scale</legend>
 
-                <input type="radio" name="tempScale" id="tempScale1" value="1">
-                <label for="tempScale1">Fahrenheit to Celcius</label>
+                    <div class="radios-wrapper flow">
 
-                <input type="radio" name="tempScale" id="tempScale2" value="2">
-                <label for="tempScale2">Celcius to Fahrenheit</label>
+                        <div class="input-wrapper radio-wrapper">
+                            <input type="radio" name="tempScale" id="tempScale1" value="1" checked>
+                            <label for="tempScale1">Fahrenheit to Celcius</label>
+                        </div><!-- end input-wrapper -->
 
-                <button type="button" class="convert">Convert <span classs="visually-hidden"></span>temperature</button>
+                        <div class="input wrapper radio-wrapper">
+                            <input type="radio" name="tempScale" id="tempScale2" value="2">
+                            <label for="tempScale2">Celcius to Fahrenheit</label>
+                        </div><!-- end input-wrapper -->
 
-                <p class="result">Test</p>
-            </fieldset>
+                    </div><!-- end radios-wrapper -->
+                </fieldset><!-- end fieldset -->
 
-        </div><!-- end temp-converter -->
+                <button type="button" class="convert" id="convertBtn">Convert <span class="visually-hidden">temperature</span></button>
 
+                <p class="result" id="conversionResult"></p>
+
+            </div><!-- end temp-converter -->
+            
+        </div><!-- end container -->
     </main>
 </body>
 </html>

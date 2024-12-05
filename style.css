@@ -108,3 +108,98 @@ textarea:not([rows]) {
     src: url('/assets/fonts/inter-v18-latin-700.woff2') format('woff2'); 
   }
 
+
+  /* CUSTOM PROPERTIES */
+
+  :root {
+
+    --ff-sans-serif: 'Inter', sans-serif;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-400: 400;
+
+    --ff-primary: var(--ff-sans-serif);
+    --fw-regular: var(var(--fw-400));
+    --fw-medium: var(--fw-600);
+    --fw-bold: var(--fw-700);
+  }
+
+
+  /* UTILITIES */
+
+  .visually-hidden {
+    clip-path: inset(50%);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .flow {
+    --flow-space: 20px;
+  }
+
+  .flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+  }
+
+
+  /* GENERAL STYLES */
+  
+  body {
+    padding: 16px;
+    font-family: var(--ff-primary);
+  }
+
+  .container {
+    width: min(100% - 2rem, 60rem);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .temp-converter {
+    padding: 30px;
+    border-radius: 10px;
+    outline: 2px solid darkgreen;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .text-input {
+    border-radius: 6px;
+    border: transparent;
+    border: 1px solid hsl(0, 97%, 12%);
+  }
+
+  .radios-wrapper {
+    --flow-space: 10px;
+
+    > * {
+        --flow-space: 6px;
+    }
+  }
+
+  .convert {
+    border: transparent;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: var(--fw-medium);
+    background-color: red;
+    padding: 1em 2em;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .result {
+    text-align: center;
+    font-weight: var(--fw-medium);
+  }
