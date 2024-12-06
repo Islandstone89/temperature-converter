@@ -115,7 +115,7 @@ textarea:not([rows]) {
     /* Primitive properties */
 
     --clr-light: hsl(300, 9%, 96%);
-    --clr-pink: hsl(351, 69%, 75%);
+    --clr-pink: hsl(351, 59%, 85%);
     --clr-burgundy: hsl(340, 87%, 15%);
     --clr-dark-blue: hsl(201, 100%, 12%);
 
@@ -130,6 +130,10 @@ textarea:not([rows]) {
     --clr-200: var(--clr-pink);
     --clr-300: var(--clr-burgundy);
     --clr-400: var(--clr-dark-blue);
+
+    --clr-1: #f1f1e6;
+    --clr-2: #e79c25;
+    --clr-3: #a8c6e2;
 
     --ff-primary: var(--ff-sans-serif);
     --fw-regular: var(var(--fw-400));
@@ -157,6 +161,18 @@ textarea:not([rows]) {
     margin-block-start: var(--flow-space, 1em);
   }
 
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+  .fw-bold {
+    font-weight: var(--fw-bold);
+  }
+
 
   /* GENERAL STYLES */
   
@@ -165,7 +181,7 @@ textarea:not([rows]) {
     --bg: var(--clr-400);
     --text: var(--clr-100);
     --btn-bg: var(--clr-300);
-    --btn-text: var(--clr-200);
+    --btn-text: var(--clr-100);
 
     padding: 16px;
     font-family: var(--ff-primary);
@@ -199,7 +215,6 @@ textarea:not([rows]) {
     border: transparent;
     background-color: transparent;
     color: inherit;
-    font-weight: var(--fw-medium);
     background-color: var(--clr-300);
     color: var(--clr-100);
     padding: 1em 2em;
@@ -248,8 +263,6 @@ textarea:not([rows]) {
     border: transparent;
     background-color: transparent;
     color: inherit;
-    text-transform: uppercase;
-    font-weight: var(--fw-medium);
     background-color: var(--btn-bg);
     color: var(--btn-text);
     padding: 1em 2em;
@@ -265,5 +278,4 @@ textarea:not([rows]) {
 
   .result {
     text-align: center;
-    font-weight: var(--fw-medium);
   }
