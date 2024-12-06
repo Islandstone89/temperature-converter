@@ -209,6 +209,7 @@ textarea:not([rows]) {
 
   .main-heading {
     color: var(--bg);
+    text-align: center;
   }
 
   .theme {
@@ -249,6 +250,10 @@ textarea:not([rows]) {
 
   .error {
     color: var(--clr-4);
+  }
+
+  .legend {
+    text-align: center;
   }
 
   .radios-wrapper {
