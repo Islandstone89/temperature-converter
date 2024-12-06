@@ -120,9 +120,19 @@ textarea:not([rows]) {
     --clr-dark-blue: hsl(201, 100%, 12%);
 
     --ff-sans-serif: 'Inter', sans-serif;
+    --fw-400: 400;
     --fw-600: 600;
     --fw-700: 700;
-    --fw-400: 400;
+
+    --size-8px: 8px;
+    --size-12px: 12px;
+    --size-16px: 16px;
+    --size-20px: 20px;
+    --size-24px: 24px;
+    --size-28px: 28px;
+    --size-32px: 32px;
+    --size-36px: 36px;
+    --size-40px: 40px;
 
     /* Semantic properties */
 
@@ -131,15 +141,20 @@ textarea:not([rows]) {
     --clr-300: var(--clr-burgundy);
     --clr-400: var(--clr-dark-blue);
 
-    --clr-1: #f1f1e6;
-    --clr-2: #e79c25;
-    --clr-3: #a8c6e2;
-
     --ff-primary: var(--ff-sans-serif);
     --fw-regular: var(var(--fw-400));
     --fw-medium: var(--fw-600);
     --fw-bold: var(--fw-700);
-  }
+    
+    --size-100: var(--size-8px);
+    --size-150: var(--size-12px);
+    --size-200: var(--size-16px);
+    --size-250: var(--size-20px);
+    --size-300: var(--size-24px);
+    --size-350: var(--size-28px);
+    --size-400: var(--size-32px);
+    --size-450: var(--size-36px);
+    --size-500: var(--size-40px);
 
 
   /* UTILITIES */
@@ -154,7 +169,7 @@ textarea:not([rows]) {
   }
 
   .flow {
-    --flow-space: 20px;
+    --flow-space: var(--size-250);
   }
 
   .flow > * + * {
@@ -183,7 +198,7 @@ textarea:not([rows]) {
     --btn-bg: var(--clr-300);
     --btn-text: var(--clr-100);
 
-    padding: 16px;
+    padding: var(--size-200);
     font-family: var(--ff-primary);
     background-color: var(--page-bg);
 
@@ -199,12 +214,12 @@ textarea:not([rows]) {
   .container {
     width: min(100% - 2rem, 60rem);
     margin-inline: auto;
-    padding-block: 20px;
+    padding-block: var(--size-200);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: var(--size-500);
   }
 
   .main-heading {
@@ -220,7 +235,7 @@ textarea:not([rows]) {
     color: var(--clr-100);
     padding: 1em 2em;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: var(--size-200);
     transition: 250ms ease-in-out;
 
     &:is(:hover, :focus-visible) {
@@ -229,8 +244,8 @@ textarea:not([rows]) {
   }
 
   .temp-converter {
-    padding: 30px;
-    border-radius: 10px;
+    padding: var(--size-400);
+    border-radius: var(--size-100);
     background-color: var(--bg);
     color: var(--text);
   }
@@ -238,12 +253,12 @@ textarea:not([rows]) {
   .text-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--size-100);
   }
 
   .text-input {
     padding: .25em;
-    border-radius: 6px;
+    border-radius: var(--size-100);
     border: transparent;
     border: 1px solid var(--clr-300);
   }
@@ -257,14 +272,15 @@ textarea:not([rows]) {
   }
 
   .radios-wrapper {
-    --flow-space: 10px;
+    --flow-space: var(--size-150);
 
     > * {
-        --flow-space: 6px;
+        --flow-space: var(--size-100);
     }
   }
 
   .convert {
+    --flow-space: var(--size-400);
     border: transparent;
     background-color: transparent;
     color: inherit;
@@ -273,12 +289,13 @@ textarea:not([rows]) {
     padding: 1em 2em;
     width: 100%;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: var(--size-150);
     transition: 250ms ease-in-out;
 
     &:is(:hover, :focus-visible) {
         opacity: .9;
     }
+  }
   }
 
   .result {

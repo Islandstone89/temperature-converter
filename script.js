@@ -1,4 +1,6 @@
 
+/* SELECTORS */
+
 let body = document.getElementById("body");
 let themeSwitch = document.getElementById("themeSwitch");
 
@@ -15,6 +17,8 @@ let emptyString = ""
 let celcius = "C";
 let fahrenheit = "F";
 
+
+/* FUNCTIONS */
 
 function convertTemp() {
     temp = textInput.value;
@@ -43,6 +47,9 @@ function convertTemp() {
 function changeTheme() {
     body.classList.toggle("dark")
 }
+
+
+/* EVENT LISTENERS */
 
 convertBtn.addEventListener("click", convertTemp);
 
