@@ -205,9 +205,13 @@ textarea:not([rows]) {
 
 
   /* GENERAL STYLES */
+
+  html {
+    color-scheme: light dark;
+  }
   
   body {
-    
+
     --page-bg: var(--clr-100);
     --bg: var(--clr-5000);
     --text: var(--clr-2000);
