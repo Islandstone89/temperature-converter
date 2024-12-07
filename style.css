@@ -115,16 +115,11 @@ textarea:not([rows]) {
     /* Primitive properties */
 
     --clr-light: hsl(0, 39%, 96%);
-    --clr-light-pink: hsl(351, 59%, 85%);
-    --clr-burgundy: hsl(340, 87%, 15%);
-    --clr-dark-blue: hsl(201, 100%, 12%);
-
     --clr-pink: hsl(330, 100%, 75%);
     --clr-light-blue: hsl(198, 84%, 70%);
     --clr-red: hsl(1, 100%, 70%);
     --clr-green: hsl(156, 98%, 40%);
     --clr-dark: hsl(0, 0%, 9%);
-
 
     --ff-sans-serif: 'Inter', sans-serif;
     --fw-400: 400;
@@ -144,18 +139,13 @@ textarea:not([rows]) {
     /* Semantic properties */
 
     --clr-100: var(--clr-light);
-    --clr-200: var(--clr-light-pink);
-    --clr-300: var(--clr-burgundy);
-    --clr-400: var(--clr-dark-blue);
+    --clr-200: var(--clr-pink);
+    --clr-300: var(--clr-light-blue);
+    --clr-400: var(--clr-red);
+    --clr-500: var(--clr-green);
+    --clr-600: var(--clr-dark);
 
-    --clr-1000: var(--clr-pink);
-    --clr-2000: var(--clr-light-blue);
-    --clr-3000: var(--clr-red);
-    --clr-4000: var(--clr-green);
-    --clr-5000: var(--clr-dark);
-
-
-
+    
     --ff-primary: var(--ff-sans-serif);
     --fw-regular: var(var(--fw-400));
     --fw-medium: var(--fw-600);
@@ -208,27 +198,29 @@ textarea:not([rows]) {
 
   body {
     --page-bg: var(--clr-100);
-    --bg: var(--clr-5000);
-    --text: var(--clr-2000);
-    --btn-bg: var(--clr-2000);
-    --btn-text: var(--clr-5000);
-    --clr-heading: var(--clr-5000);
-    --theme-btn-bg:var(--clr-5000) ;
+    --bg: var(--clr-600);
+    --text: var(--clr-300);
+    --btn-bg: var(--clr-300);
+    --btn-text: var(--clr-600);
+    --clr-heading: var(--clr-600);
+    --theme-btn-bg:var(--clr-600) ;
     --theme-btn-text: var(--clr-100);
+    --text-input-border: var(--clr-300);
 
     padding: var(--size-200);
     font-family: var(--ff-primary);
     background-color: var(--page-bg);
 
     &:is(.dark) {
-      --page-bg: var(--clr-5000);
+      --page-bg: var(--clr-600);
       --bg: var(--clr-100);
-      --text: var(--clr-5000);
-      --btn-bg: var(--clr-5000);
-      --btn-text: var(--clr-1000);
-      --clr-heading: var(--clr-1000);
+      --text: var(--clr-600);
+      --btn-bg: var(--clr-600);
+      --btn-text: var(--clr-200);
+      --clr-heading: var(--clr-200);
       --theme-btn-bg:var(--clr-100) ;
-      --theme-btn-text: var(--clr-5000);
+      --theme-btn-text: var(--clr-600);
+      --text-input-border: var(--clr-200);
     }
   }
 
@@ -279,11 +271,7 @@ textarea:not([rows]) {
     padding: .25em;
     border-radius: var(--size-100);
     border: transparent;
-    border: 1px solid var(--clr-300);
-  }
-
-  .error {
-    color: var(--clr-4);
+    border: 2px solid var(--text-input-border);
   }
 
   .legend {
