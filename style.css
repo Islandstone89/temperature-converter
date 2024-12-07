@@ -242,7 +242,7 @@ textarea:not([rows]) {
   .container {
     width: min(100% - 2rem, 60rem);
     margin-inline: auto;
-    padding-block: var(--size-200);
+    padding-block: var(--size-300);
     display: flex;
     flex-direction: column;
     justify-content: center;
