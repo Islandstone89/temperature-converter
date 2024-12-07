@@ -205,9 +205,8 @@ textarea:not([rows]) {
 
 
   /* GENERAL STYLES */
-    
-  body {
 
+  body {
     --page-bg: var(--clr-100);
     --bg: var(--clr-5000);
     --text: var(--clr-2000);
@@ -216,8 +215,6 @@ textarea:not([rows]) {
     --clr-heading: var(--clr-5000);
     --theme-btn-bg:var(--clr-5000) ;
     --theme-btn-text: var(--clr-100);
-
-
 
     padding: var(--size-200);
     font-family: var(--ff-primary);
@@ -232,7 +229,7 @@ textarea:not([rows]) {
       --clr-heading: var(--clr-1000);
       --theme-btn-bg:var(--clr-100) ;
       --theme-btn-text: var(--clr-5000);
-  }
+    }
   }
 
   .container {
